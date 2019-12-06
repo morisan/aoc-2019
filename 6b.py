@@ -24,8 +24,8 @@ def find_ancestors(child, ancestors):
     return ancestors
 
 def find_orbital_distance(a, b):
-  a_ancestors = find_ancestors('YOU', [])
-  b_ancestors = find_ancestors('SAN', [])
+  a_ancestors = find_ancestors(a, [])
+  b_ancestors = find_ancestors(b, [])
 
   for i, a in enumerate(a_ancestors):
     for j, b in enumerate(b_ancestors):
