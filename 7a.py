@@ -72,8 +72,7 @@ max_signal = 0
 phases = [0, 1, 2, 3, 4]
 done = False
 while not done:
-  if (sum(phases) == 20):
-    done = True
+  done = sum(phases) == 20
 
   unique = list(set(phases))
   if (len(unique) == 5):

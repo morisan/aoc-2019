@@ -1,5 +1,3 @@
-import time
-
 first = [True, True, True, True, True]
 pcs = [0, 0, 0, 0, 0]
 mems = [False, False, False, False, False]
@@ -75,8 +73,7 @@ max_signal = 0
 phases = [5, 6, 7, 8, 9]
 done = False
 while not done:
-  if (sum(phases) == 45):
-    done = True
+  done = sum(phases) == 45
 
   first = [True, True, True, True, True]
   pcs = [0, 0, 0, 0, 0]
